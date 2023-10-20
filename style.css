@@ -4,12 +4,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
+header {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 650px;
 }
 
-a {
+header p {
+    color: gray;
+    font-size: 15px;
+}
+
+.link a {
     display: inline-block;
     color: rgb(78, 135, 185);
     transition: all .2s;
@@ -57,4 +65,3 @@ details {
 details:hover {
     box-shadow: 0 0 20px rgba(78, 135, 185, 0.596);
 }
-
