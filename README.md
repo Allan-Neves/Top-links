@@ -2,7 +2,7 @@
 
 ## Sobre o Projeto
 
-TopLinks é um site que reúne diversos links de diversos assuntos e aspectos da tecnologia. Se você está procurando por recursos de aprendizado, artigos interessantes, ferramentas úteis ou qualquer coisa relacionada à tecnologia, TopLinks é o lugar para você!
+Best Links é um site que reúne diversos links de diversos assuntos e aspectos da tecnologia. Se você está procurando por recursos de aprendizado, artigos interessantes, ferramentas úteis ou qualquer coisa relacionada à tecnologia, TopLinks é o lugar para você!
 
 ## Tecnologias Utilizadas
 
@@ -10,7 +10,7 @@ Este projeto foi construído utilizando apenas HTML e CSS. Mantivemos as coisas 
 
 ## Como Contribuir
 
-Adoraríamos ter sua ajuda para tornar o TopLinks ainda melhor! Se você encontrou um link interessante que acha que deveria estar em nosso site, sinta-se à vontade para contribuir. Aqui estão os passos:
+Adoraríamos ter sua ajuda para tornar o Best Links ainda melhor! Se você encontrou um link interessante que acha que deveria estar em nosso site, sinta-se à vontade para contribuir. Aqui estão os passos:
 
 1. Faça um fork do projeto.
 2. Crie uma nova branch com o nome do recurso que você deseja adicionar.
