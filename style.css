@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 650px;
+    max-width: 660px;
     padding: 10px;
 }
 
