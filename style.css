@@ -35,6 +35,7 @@ a:hover {
 }
 
 main {
+    max-width: 2500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,9 +48,9 @@ ul li {
 }
 
 details {
-    width: 445px;
+    width: 450px;
     height: 100%;
-    padding: 20px;
+    padding: 25px;
     margin: 10px;
     border-radius: 12px;
     border: 1px solid rgba(78, 135, 185, 0.103);
