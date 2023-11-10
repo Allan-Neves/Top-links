@@ -13,7 +13,7 @@ header {
     padding: 10px;
 }
 
-header p {
+header p, #footer {
     color: gray;
     font-size: 15px;
 }
@@ -65,4 +65,20 @@ details {
 
 details:hover {
     box-shadow: 0 0 20px rgba(78, 135, 185, 0.596);
+}
+
+#footer {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(165, 165, 165, 0.527);
+    background-color: rgb(255, 255, 255);
+    transition: all .7;
+    cursor: pointer;
+}
+
+#footer:hover {
+    transform: scale(1.02);
 }
