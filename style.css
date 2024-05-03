@@ -1,14 +1,17 @@
+/* Reset básico */
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Estilo global do body */
 body {
   background-color: #f5f5f5;
   color: #333;
 }
 
+/* Estilos do cabeçalho */
 header {
   margin: 20px auto;
   display: flex;
@@ -22,12 +25,14 @@ header {
   border-radius: 8px;
 }
 
+/* Estilos dos parágrafos dentro do cabeçalho e do rodapé */
 header p,
 #footer {
   color: #555;
   font-size: 16px;
 }
 
+/* Estilos dos links */
 .link a {
   display: inline-block;
   color: #4e87b9;
@@ -35,20 +40,53 @@ header p,
   transition: color 0.2s;
 }
 
+/* Estilos dos itens de lista de links */
 .link {
   list-style: url("images/link.png");
   margin: 15px 0;
   transition: all 0.3s;
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
 
+/* Efeito de hover nos links */
 .link:hover a {
   color: #2b5681;
 }
 
+/* Efeito de hover nos itens de lista de links */
 .link:hover {
   transform: scale(1.05);
 }
 
+.link .tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease;
+}
+
+.link:hover .tooltip {
+  display: block;
+  width: 230px;
+}
+
+.link:hover .tooltip:after {
+  content: attr(title);
+  display: block;
+  white-space: pre-line;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Estilos do conteúdo principal */
 main {
   max-width: 1200px;
   display: flex;
@@ -58,10 +96,14 @@ main {
   margin: 20px auto;
 }
 
+/* Estilos dos itens de lista */
 ul li {
   padding: 10px;
+  list-style: none;
 }
 
+
+/* Estilos dos detalhes (elemento <details>) */
 details {
   width: 400px;
   padding: 20px;
@@ -78,10 +120,12 @@ details {
   background-color: #fff;
 }
 
+/* Efeito de hover nos detalhes */
 details:hover {
   box-shadow: 0 0 20px rgba(78, 135, 185, 0.3);
 }
 
+/* Estilos do rodapé */
 #footer {
   margin: 20px auto;
   padding: 15px;
@@ -94,6 +138,7 @@ details:hover {
   cursor: pointer;
 }
 
+/* Efeito de hover no rodapé */
 #footer:hover {
   transform: scale(1.05);
 }
