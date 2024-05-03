@@ -35,7 +35,8 @@ header p,
 /* Estilos dos links */
 .link a {
   display: inline-block;
-  color: #4e87b9;
+  color: #1988e2;
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -44,8 +45,8 @@ header p,
 .link {
   list-style: url("images/link.png");
   margin: 15px 0;
-  transition: all 0.3s;
-  background-color: #f1f1f1;
+  transition: all 0.4s;
+  background-color: #f5f0f06b;
   border-radius: 10px;
 }
 
@@ -57,32 +58,26 @@ header p,
 /* Efeito de hover nos itens de lista de links */
 .link:hover {
   transform: scale(1.05);
+  background-color: #f5f0f0b9;
 }
 
 .link .tooltip {
-  display: none;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  min-width: 250px;
+  background-color: rgba(0, 0, 0, 0.678);
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
-  transition: opacity 0.5s ease;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .link:hover .tooltip {
-  display: block;
-  width: 230px;
-}
-
-.link:hover .tooltip:after {
-  content: attr(title);
-  display: block;
-  white-space: pre-line;
-  font-size: 14px;
-  line-height: 1.5;
+  opacity: 1;
+  transition-delay: 0.7s;
 }
 
 
