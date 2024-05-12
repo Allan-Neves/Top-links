@@ -4,12 +4,6 @@
 
 Top Links é um site que reúne diversos links de diversos assuntos e aspectos da tecnologia. Se você está procurando por recursos de aprendizado, artigos interessantes, ferramentas úteis ou qualquer coisa relacionada à tecnologia, TopLinks é o lugar para você!
 
-# Top Links
-
-## Sobre o Projeto
-
-Top Links é um site que reúne diversos links de diversos assuntos e aspectos da tecnologia. Se você está procurando por recursos de aprendizado, artigos interessantes, ferramentas úteis ou qualquer coisa relacionada à tecnologia, TopLinks é o lugar para você!
-
 ![Template](https://imgur.com/DLIHEGg.png)
 
 ## Demo
