@@ -1,4 +1,3 @@
-
 const toggleButton = document.getElementById('toggle-dark-mode');
 const body = document.body;
 

@@ -1,21 +1,52 @@
+/* Variáveis */
+:root {
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-color: #1988e2;
+  --primary-color-dark-mode: #81c4ff;
+  --background-light: #f5f5f5;
+  --background-dark: #1a1a1a;
+  --text-color: #333;
+  --text-color-light: #555;
+  --text-color-dark-mode: #f5f5f5;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --link-list-icon: url("images/link.png");
+  --link-list-icon-dark-mode: url("images/link-white.png");
+  --hover-background-light: #f5f0f0b9;
+  --hover-background-dark: #444;
+  --tooltip-background: rgba(0, 0, 0, 0.678);
+  --tooltip-text-color: #fff;
+  --header-background-light: #fff;
+  --header-background-dark: #333;
+  --header-text-color-dark-mode: #ccc;
+  --footer-background-light: #fff;
+  --footer-background-dark: #333;
+  --footer-box-shadow: rgba(165, 165, 165, 0.3);
+  --footer-box-shadow-dark-mode: rgba(255, 255, 255, 0.1);
+  --details-background-light: #fff;
+  --details-background-dark: #333;
+  --details-border-color-dark-mode: rgba(255, 255, 255, 0.1);
+  --details-box-shadow: rgba(78, 135, 185, 0.1);
+  --details-hover-box-shadow: rgba(78, 135, 185, 0.3);
+}
+
 /* Reset básico */
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family);
 }
 
 /* Estilo global do body */
 body {
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
 
 /* Modo escuro */
 body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
+  background-color: var(--background-dark);
+  color: var(--text-color-dark-mode);
 }
 
 /* Estilos do cabeçalho */
@@ -26,16 +57,17 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 1290px;
-  max-width: calc(100% - 40px);
+  width: 100%;
+  max-width: 1290px;
   padding: 20px;
   margin: 20px auto;
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--header-background-light);
+  box-shadow: 0 2px 10px var(--box-shadow-color);
   border-radius: 8px;
   transition: all 0.7s;
 }
 
+/* Botão de alternar modo escuro */
 #toggle-dark-mode {
   background: none;
   border: none;
@@ -46,13 +78,14 @@ header {
   align-items: center;
 }
 
+/* Ícone de sol e lua */
 #toggle-dark-mode .fa-sun {
   display: none;
 }
 
 body.dark-mode header {
-  background-color: #333;
-  color: #f5f5f5;
+  background-color: var(--header-background-dark);
+  color: var(--text-color-dark-mode);
 }
 
 body.dark-mode #toggle-dark-mode .fa-sun {
@@ -66,75 +99,78 @@ body.dark-mode #toggle-dark-mode .fa-moon {
 
 body.dark-mode header p,
 body.dark-mode #footer {
-  color: #ccc;
+  color: var(--header-text-color-dark-mode);
 }
 
+/* Efeito de hover no cabeçalho */
 header:hover {
   transform: scale(1.01);
-  box-shadow: 0 0 20px rgba(78, 135, 185, 0.3);
+  box-shadow: 0 0 20px var(--box-shadow-color);
 }
 
 /* Estilos dos parágrafos dentro do cabeçalho e do rodapé */
 header p,
 #footer {
-  color: #555;
+  color: var(--text-color-light);
   font-size: 16px;
 }
 
 /* Estilos dos links */
 .link a {
   display: inline-block;
-  color: #1988e2;
+  color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s;
 }
 
+/* Ajustes para links no modo escuro */
 body.dark-mode .link a {
-  color: #81c4ff;
+  color: var(--primary-color-dark-mode);
 }
 
 /* Estilos dos itens de lista de links */
 .link {
-  list-style: url("images/link.png");
+  list-style: var(--link-list-icon);
   margin: 15px 0;
   transition: all 0.4s;
-  background-color: #f5f0f06b;
+  background-color: var(--background-light);
   border-radius: 10px;
 }
 
+/* Ajustes para itens de lista de links no modo escuro */
 body.dark-mode .link {
-  list-style: url("images/link-white.png");
+  list-style: var(--link-list-icon-dark-mode);
   background-color: #333;
 }
 
-body.dark-mode .link {
-  background-color: #333;
-}
-
+/* Efeito de hover nos itens de lista de links */
 .link:hover a {
-  color: #2b5681;
+  color: var(--primary-color);
 }
 
+/* Ajustes de hover para links no modo escuro */
 body.dark-mode .link:hover a {
-  color: #aecfff;
+  color: var(--primary-color-dark-mode);
 }
 
 /* Efeito de hover nos itens de lista de links */
 .link:hover {
   transform: scale(1.05);
-  background-color: #f5f0f0b9;
+  background-color: var(--hover-background-light);
 }
 
+/* Ajustes de hover para itens de lista de links no modo escuro */
 body.dark-mode .link:hover {
-  background-color: #444;
+  background-color: var(--hover-background-dark);
 }
 
+/* Tooltip */
 .link .tooltip {
   position: absolute;
   min-width: 250px;
-  background-color: rgba(0, 0, 0, 0.678);
-  color: #fff;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text-color);
   padding: 10px;
   border-radius: 5px;
   bottom: 100%;
@@ -171,24 +207,24 @@ details {
   padding: 20px;
   margin: 20px;
   border-radius: 8px;
-  border: 1px solid rgba(78, 135, 185, 0.1);
-  box-shadow: 0 0 20px rgba(78, 135, 185, 0.1);
+  border: 1px solid var(--details-border-color-dark-mode);
+  box-shadow: 0 0 20px var(--details-box-shadow);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
   transition: box-shadow 0.4s;
-  background-color: #fff;
+  background-color: var(--details-background-light);
 }
 
+/* Ajustes para detalhes no modo escuro */
 body.dark-mode details {
-  background-color: #333;
-  border-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--details-background-dark);
 }
 
 details:hover {
-  box-shadow: 0 0 20px rgba(78, 135, 185, 0.3);
+  box-shadow: 0 0 20px var(--details-hover-box-shadow);
 }
 
 /* Estilos do rodapé */
@@ -200,21 +236,22 @@ details:hover {
   width: 400px;
   max-width: calc(100% - 40px);
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(165, 165, 165, 0.3);
-  background-color: #fff;
+  box-shadow: 0 0 20px var(--footer-box-shadow);
+  background-color: var(--footer-background-light);
   transition: all 0.4s;
   cursor: pointer;
 }
 
+/* Ajustes para o rodapé no modo escuro */
 body.dark-mode #footer {
-  background-color: #333;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-background-dark);
+  box-shadow: 0 0 20px var(--footer-box-shadow-dark-mode);
 }
 
 /* Efeito de hover no rodapé */
 #footer:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(78, 135, 185, 0.3);
+  box-shadow: 0 0 20px var(--footer-box-shadow);
 }
 
 /* Fazendo a responsividade */
