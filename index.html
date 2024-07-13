@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/link.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Links</title>
+    <meta name="description" content="Oferecemos mais de 150 links para você! Desde Palestras, Cursos, Ferramentas Gratuitas, Artigos, Tutoriais e muito mais. Venha conferir!">
+    <meta name="author" content="Allan Neves">
+    <link rel="shortcut icon" href="./images/link.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Top Links | +150 link</title>
 </head>
 
 <body>
     <header>
         <h1>Links super-mega-hyper-plus práticos 👇</h1>
         <p>Oferecemos mais de <strong>150 links</strong> para você!</p>
+        <button id="toggle-dark-mode">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
 
     <main>
@@ -163,19 +170,6 @@
                                 <span class="tooltip">
                                     Este link leva a um Gist no GitHub, que é um trecho de código JavaScript hospedado na plataforma GitHub. Os Gists são úteis para compartilhar trechos de código, exemplos práticos ou soluções para problemas específicos em JavaScript e outras linguagens de programação.
                                 </span> Guia de referencias para estudo de JavaScript</a>
-                        </li>
-
-                        <li>
-                        <!-- 
-                                POR ESTAREM VAZIO OS LINKS MANTIVE EM COMENTÁRIO PARA NÃO TER POLUIÇÂO VISUAL AO USUÁRIO (By:BrianMuniz)
-                            <h3 style="font-size: 22px;">Tutoriais 🎓</h3>
-                            <ul>
-                                <li class="link"><a href="" target="_blank">Tutorial 1</a></li>
-
-                                <li class="link"><a href="" target="_blank">Tutorial 2</a></li>
-
-                            </ul>
-                        -->
                         </li>
                     </ul>
                 </li>
@@ -793,6 +787,12 @@
                                     Uma plataforma de aprendizado online que oferece uma ampla gama de cursos gratuitos em diversas áreas, incluindo matemática, ciências, programação e muito mais.
                                 </span> Khan Academy</a>
                         </li>
+                        <li class="link">
+                            <a href="https://www.freecodecamp.org/">
+                                <span class="tooltip">
+                                    O FreeCodeCamp é uma plataforma educacional online gratuita e de código aberto que oferece cursos interativos e projetos práticos para aprender programação web, desenvolvimento de software e tecnologias relacionadas. Fundada por Quincy Larson em 2014, a missão principal do FreeCodeCamp é fornecer uma educação acessível e de alta qualidade em programação para qualquer pessoa, em qualquer lugar do mundo.
+                                </span> Freecodecamp </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -1224,7 +1224,9 @@
         </details>
     </main>
 
-    <p id="footer">Última atualização: <em>03/05/2024.</em></p>
+    <p id="footer">Última atualização: <em>13/07/2024.</em></p>
 </body>
+
+<script src="script.js"></script>
 
 </html>
