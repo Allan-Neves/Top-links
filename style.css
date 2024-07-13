@@ -9,6 +9,13 @@
 body {
   background-color: #f5f5f5;
   color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo escuro */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
 }
 
 /* Estilos do cabeçalho */
@@ -27,6 +34,39 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   transition: all 0.7s;
+}
+
+#toggle-dark-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#toggle-dark-mode .fa-sun {
+  display: none;
+}
+
+body.dark-mode header {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+body.dark-mode #toggle-dark-mode .fa-sun {
+  display: inline;
+  color: rgb(248, 248, 76);
+}
+
+body.dark-mode #toggle-dark-mode .fa-moon {
+  display: none;
+}
+
+body.dark-mode header p,
+body.dark-mode #footer {
+  color: #ccc;
 }
 
 header:hover {
@@ -50,6 +90,10 @@ header p,
   transition: color 0.2s;
 }
 
+body.dark-mode .link a {
+  color: #81c4ff;
+}
+
 /* Estilos dos itens de lista de links */
 .link {
   list-style: url("images/link.png");
@@ -59,15 +103,31 @@ header p,
   border-radius: 10px;
 }
 
-/* Efeito de hover nos links */
+body.dark-mode .link {
+  list-style: url("images/link-white.png");
+  background-color: #333;
+}
+
+body.dark-mode .link {
+  background-color: #333;
+}
+
 .link:hover a {
   color: #2b5681;
+}
+
+body.dark-mode .link:hover a {
+  color: #aecfff;
 }
 
 /* Efeito de hover nos itens de lista de links */
 .link:hover {
   transform: scale(1.05);
   background-color: #f5f0f0b9;
+}
+
+body.dark-mode .link:hover {
+  background-color: #444;
 }
 
 .link .tooltip {
@@ -89,7 +149,6 @@ header p,
   transition-delay: 0.7s;
 }
 
-
 /* Estilos do conteúdo principal */
 main {
   max-width: 1350px;
@@ -105,7 +164,6 @@ ul li {
   padding: 10px;
   list-style: none;
 }
-
 
 /* Estilos dos detalhes (elemento <details>) */
 details {
@@ -124,7 +182,11 @@ details {
   background-color: #fff;
 }
 
-/* Efeito de hover nos detalhes */
+body.dark-mode details {
+  background-color: #333;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
 details:hover {
   box-shadow: 0 0 20px rgba(78, 135, 185, 0.3);
 }
@@ -142,6 +204,11 @@ details:hover {
   background-color: #fff;
   transition: all 0.4s;
   cursor: pointer;
+}
+
+body.dark-mode #footer {
+  background-color: #333;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* Efeito de hover no rodapé */
