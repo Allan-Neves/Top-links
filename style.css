@@ -9,8 +9,8 @@
   --text-color-light: #555;
   --text-color-dark-mode: #f5f5f5;
   --box-shadow-color: rgba(0, 0, 0, 0.1);
-  --link-list-icon: url("images/link.png");
-  --link-list-icon-dark-mode: url("images/link-white.png");
+  --link-list-icon: url("./images/link.png");
+  --link-list-icon-dark-mode: url("./images/link-white.png");
   --hover-background-light: #f5f0f0b9;
   --hover-background-dark: #444;
   --tooltip-background: rgba(0, 0, 0, 0.678);
@@ -65,6 +65,14 @@ header {
   box-shadow: 0 2px 10px var(--box-shadow-color);
   border-radius: 8px;
   transition: all 0.7s;
+}
+
+h1 {
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 body.dark-mode header {
