@@ -32,6 +32,7 @@
 /* Reset básico */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
 }
@@ -41,6 +42,10 @@ body {
   background-color: var(--background-light);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Modo escuro */
@@ -51,16 +56,11 @@ body.dark-mode {
 
 /* Estilos do cabeçalho */
 header {
-  box-sizing: border-box;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
+  width: 95%;
   max-width: 1290px;
   padding: 20px;
-  margin: 20px auto;
+  margin-top: 25px;
   background-color: var(--header-background-light);
   box-shadow: 0 2px 10px var(--box-shadow-color);
   border-radius: 8px;
@@ -73,6 +73,10 @@ h1 {
   font-size: 36px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 10px;
 }
 
 body.dark-mode header {
@@ -110,7 +114,7 @@ header p,
   justify-content: center;
   width: 40px;
   height: 40px;
-
+  transition: all 0.5s;
 }
 
 #toggle-dark-mode:hover {
@@ -144,70 +148,6 @@ body.dark-mode #toggle-dark-mode .bi-moon-stars-fill {
   visibility: visible;
 }
 
-/* Estilos dos links */
-.link a {
-  display: inline-block;
-  color: var(--primary-color);
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-body.dark-mode .link a {
-  color: var(--primary-color-dark-mode);
-}
-
-/* Estilos dos itens de lista de links */
-.link {
-  list-style: var(--link-list-icon);
-  margin: 15px 0;
-  transition: all 0.4s;
-  background-color: var(--background-light);
-  border-radius: 10px;
-}
-
-body.dark-mode .link {
-  list-style: var(--link-list-icon-dark-mode);
-  background-color: #333;
-}
-
-.link:hover a {
-  color: var(--primary-color);
-}
-
-body.dark-mode .link:hover a {
-  color: var(--primary-color-dark-mode);
-}
-
-.link:hover {
-  transform: scale(1.05);
-  background-color: var(--hover-background-light);
-}
-
-body.dark-mode .link:hover {
-  background-color: var(--hover-background-dark);
-}
-
-/* Tooltip */
-.link .tooltip {
-  position: absolute;
-  min-width: 250px;
-  background-color: var(--tooltip-background);
-  color: var(--tooltip-text-color);
-  padding: 10px;
-  border-radius: 5px;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.4s ease-in;
-}
-
-.link:hover .tooltip {
-  opacity: 1;
-  transition-delay: 0.7s;
-}
-
 /* Estilos do conteúdo principal */
 main {
   max-width: 1350px;
@@ -216,12 +156,6 @@ main {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 20px auto;
-}
-
-/* Estilos dos itens de lista */
-ul li {
-  padding: 10px;
-  list-style: none;
 }
 
 /* Estilos dos detalhes (elemento <details>) */
@@ -249,6 +183,81 @@ details:hover {
   box-shadow: 0 0 20px var(--details-hover-box-shadow);
 }
 
+/* Estilos dos itens de lista */
+ul li {
+  list-style: none;
+}
+
+/* Estilos dos links */
+.link a {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+  margin: 0 10px;
+}
+
+body.dark-mode .link a {
+  color: var(--primary-color-dark-mode);
+}
+
+/* Estilos dos itens de lista de links */
+.link {
+  list-style: none;
+  margin: 15px 0;
+  padding: 10px;
+  transition: all 0.4s;
+  background-color: var(--background-light);
+  border-radius: 10px;
+}
+
+body.dark-mode .link {
+  background-color: #292929;
+}
+
+.link:hover a {
+  color: var(--primary-color);
+}
+
+body.dark-mode .link:hover a {
+  color: var(--primary-color-dark-mode);
+}
+
+.link:hover {
+  transform: scale(1.05);
+  background-color: var(--hover-background-light);
+}
+
+body.dark-mode .link:hover {
+  background-color: var(--hover-background-dark);
+}
+
+li > h2 + ul {
+  padding-left: 12px;
+}
+
+
+/* Tooltip */
+.link .tooltip {
+  position: absolute;
+  min-width: 250px;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text-color);
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.link:hover .tooltip {
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+
 /* Estilos do rodapé */
 #footer {
   box-sizing: border-box;
@@ -270,7 +279,7 @@ body.dark-mode #footer {
 }
 
 #footer:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   box-shadow: 0 0 20px var(--footer-box-shadow);
 }
 
