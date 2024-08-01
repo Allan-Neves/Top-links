@@ -101,23 +101,47 @@ header p,
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 24px;
-  margin-top: 1rem;
+  font-size: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
 }
 
-#toggle-dark-mode .fa-sun {
-  display: none;
+#toggle-dark-mode:hover {
+  color: #ff9800;
+  transform: scale(1.2);
 }
 
-body.dark-mode #toggle-dark-mode .fa-sun {
-  display: inline;
+#toggle-dark-mode .bi {
+  position: absolute;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#toggle-dark-mode .bi-sun {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.dark-mode #toggle-dark-mode .bi-sun {
+  opacity: 1;
+  visibility: visible;
   color: rgb(248, 248, 76);
 }
 
-body.dark-mode #toggle-dark-mode .fa-moon {
-  display: none;
+body.dark-mode #toggle-dark-mode .bi-moon-stars-fill {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#toggle-dark-mode .bi-moon-stars-fill {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Estilos dos links */
