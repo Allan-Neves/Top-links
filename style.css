@@ -225,7 +225,7 @@ body.dark-mode .link:hover a {
 }
 
 .link:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   background-color: var(--hover-background-light);
 }
 
