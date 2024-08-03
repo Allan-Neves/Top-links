@@ -34,26 +34,34 @@ Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato con
 
 Agradecemos aos seguintes contribuidores por seu apoio e trabalho no projeto:
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Allan-Neves">
+        <img src="https://avatars.githubusercontent.com/u/89498717?v=4" alt="Foto do Contribuidor 1" style="width: 100px; height: 100px;"/>
+      </a>
+      <br />
+      <strong>Allan Neves</strong>
+      <p>Idealizador e criador da Top-Links</p>
+    </td>
+      <td align="center">
+      <a href="https://github.com/MatheusMStorm">
+        <img src="https://avatars.githubusercontent.com/u/131560455?v=4" alt="Foto do Contribuidor 3" style="width: 100px; height: 100px;"/>
+      </a>
+      <br />
+      <strong>Matheus Moura</strong>
+      <p>PR#2 na Top-Links</p>
+    </td>
+    <td align="center">
+      <a href="https://github.com/BrianMunizSilveira">
+        <img src="https://avatars.githubusercontent.com/u/155079481?v=4" alt="Foto do Contribuidor 3" style="width: 100px; height: 100px;"/>
+      </a>
+      <br />
+      <strong>Brian Muniz Silveira</strong>
+      <p>PR#3 - #10 na Top-Links</p>
+    </td>
+  </tr>
+</table>
 
-  <div style="text-align: center;">
-    <a href="https://link-para-perfil1">
-      <img src="https://avatars.githubusercontent.com/u/131560455?v=4" alt="Foto do Contribuidor 1" style="border-radius: 50%; width: 100px; height: 100px;"/>
-    </a>
-    <p><strong>Matheus Moura</strong></p>
-    <p>PR#2 no TopLinks.</p>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="https://github.com/BrianMunizSilveira">
-      <img src="https://avatars.githubusercontent.com/u/155079481?v=4" alt="Foto do Contribuidor 3" style="border-radius: 50%; width: 100px; height: 100px;"/>
-    </a>
-    <p><strong>Brian Muniz Silveira</strong></p>
-    <p>PR#3 - #10 no TopLinks.</p>
-  </div>
 
 </div>
-
-### 🤔 Como Contribuir
-
-Se você gostaria de contribuir para o projeto, siga o tópico [Como contribuir](#como-contribuir).
