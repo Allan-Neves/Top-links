@@ -53,7 +53,3 @@ Agradecemos aos seguintes contribuidores por seu apoio e trabalho no projeto:
   </div>
 
 </div>
-
-### 🤔 Como Contribuir
-
-Se você gostaria de contribuir para o projeto, siga o tópico [Como contribuir](#como-contribuir).
