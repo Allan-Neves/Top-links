@@ -1,67 +1,97 @@
-# Top Links
+# TopLinks 🔗
 
-## 📄 Sobre o Projeto
+Uma coleção curada de recursos tecnológicos para desenvolvedores
 
-Top Links é um site que reúne diversos links de diversos assuntos e aspectos da tecnologia. Se você está procurando por recursos de aprendizado, artigos interessantes, ferramentas úteis ou qualquer coisa relacionada à tecnologia, TopLinks é o lugar para você!
+![Template](https://i.imgur.com/okGojVh.png)
 
-![Template](https://i.imgur.com/uMRRVUW.png)
+## 📌 Visão Geral
 
-## 🚀 Demo
+TopLinks é uma plataforma que centraliza links relevantes sobre tecnologia, cuidadosamente verificados e organizados para facilitar seu acesso a:
 
-[Clique aqui](https://toplinks.vercel.app/) e você será redirecionado(a) para o site.
+- Recursos de aprendizado de alta qualidade
+- Artigos técnicos relevantes
+- Ferramentas essenciais para desenvolvedores
+- Conteúdo diversificado sobre tecnologia
 
-## 🛠️ Tecnologias Utilizadas
+🌐 **[Acesse o TopLinks](https://toplinks.vercel.app/)**
 
-Este projeto foi construído utilizando apenas HTML e CSS. Mantivemos as coisas simples e eficientes!
+## ⚡ Recursos
+
+- Interface limpa e intuitiva
+- Navegação simplificada
+- Organização por categorias
+- Atualizações frequentes
+- Conteúdo verificado pela comunidade
+
+## 🛠️ Tecnologias
+
+Este projeto foi construído com as seguintes tecnologias web:
+
+- **HTML5**: estrutura do site
+- **CSS3**: estilização e layouts
+- **JavaScript**: funcionalidade do modo escuro
 
 ## 🤝 Como Contribuir
 
-Adoraríamos ter sua ajuda para tornar o Top Links ainda melhor! Se você encontrou um link interessante que acha que deveria estar em nosso site, sinta-se à vontade para contribuir. Aqui estão os passos:
+Sua contribuição é muito bem-vinda! Siga estes passos para participar:
 
-1. Faça um fork do projeto.
-2. Crie uma nova branch com o nome do recurso que você deseja adicionar.
-3. Faça suas alterações ou adições.
-4. Faça um commit com uma mensagem descritiva do que você fez.
-5. Faça um Pull Request.
+1. **Fork**: Faça um fork do repositório
+2. **Clone**: Clone o fork para sua máquina local
+3. **Branch**: Crie uma branch para sua contribuição
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+   ```
+4. **Commit**: Faça suas alterações e commit
+   ```bash
+   git commit -m "feat: adiciona nova funcionalidade"
+   ```
+5. **Push**: Envie suas alterações para seu fork
+   ```bash
+   git push origin feature/nova-funcionalidade
+   ```
+6. **Pull Request**: Abra um PR com uma descrição clara das mudanças
 
-Nossa equipe revisará seu Pull Request e, se tudo estiver correto, seu recurso será adicionado ao site.
+## 📬 Comunidade
 
-## 📬 Contato
+Junte-se à nossa comunidade:
 
-Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato conosco! Você pode nos encontrar no [Discord](https://discord.gg/8qsNyd7DbD) e no grupo do [WhatsApp](https://chat.whatsapp.com/BSiJuKkvAnK6ATMw0urFZl). Estamos ansiosos para ouvir de você!
+- [Discord](https://discord.gg/8qsNyd7DbD)
+- [WhatsApp](https://chat.whatsapp.com/BSiJuKkvAnK6ATMw0urFZl)
 
 ## 👥 Contribuidores
-
-Agradecemos aos seguintes contribuidores por seu apoio e trabalho no projeto:
 
 <table>
   <tr>
     <td align="center">
       <a href="https://github.com/Allan-Neves">
-        <img src="https://avatars.githubusercontent.com/u/89498717?v=4" alt="Foto do Contribuidor 1" style="width: 100px; height: 100px;"/>
+        <img src="https://avatars.githubusercontent.com/u/89498717?v=4" width="100" height="100" alt="Allan Neves"/>
+        <br />
+        <strong>Allan Neves</strong>
+        <br />
+        <small>Idealizador e Criador</small>
       </a>
-      <br />
-      <strong>Allan Neves</strong>
-      <p>Idealizador e criador da Top-Links</p>
     </td>
-      <td align="center">
+    <td align="center">
       <a href="https://github.com/MatheusMStorm">
-        <img src="https://avatars.githubusercontent.com/u/131560455?v=4" alt="Foto do Contribuidor 3" style="width: 100px; height: 100px;"/>
+        <img src="https://avatars.githubusercontent.com/u/131560455?v=4" width="100" height="100" alt="Matheus Moura"/>
+        <br />
+        <strong>Matheus Moura</strong>
+        <br />
+        <small>PR#2</small>
       </a>
-      <br />
-      <strong>Matheus Moura</strong>
-      <p>PR#2 na Top-Links</p>
     </td>
     <td align="center">
       <a href="https://github.com/BrianMunizSilveira">
-        <img src="https://avatars.githubusercontent.com/u/155079481?v=4" alt="Foto do Contribuidor 3" style="width: 100px; height: 100px;"/>
+        <img src="https://avatars.githubusercontent.com/u/155079481?v=4" width="100" height="100" alt="Brian Muniz Silveira"/>
+        <br />
+        <strong>Brian Muniz Silveira</strong>
+        <br />
+        <small>PR#3 - #12</small>
       </a>
-      <br />
-      <strong>Brian Muniz Silveira</strong>
-      <p>PR#3 - #10 na Top-Links</p>
     </td>
   </tr>
 </table>
 
+## 📄 Licença
 
-</div>
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
